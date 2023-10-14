@@ -1,0 +1,9 @@
+Start:
+localStorage.setItem('saveGame', 'null') 
+localStorage.setItem('savePrestige', 'null') 
+localStorage.setItem('saveProjectsActive', 'null') 
+localStorage.setItem('saveProjectsFlags', 'null') 
+localStorage.setItem('saveProjectsUses', 'null') 
+localStorage.setItem('saveStratsActive', 'null') 
+
+
