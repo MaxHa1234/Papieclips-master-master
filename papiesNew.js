@@ -17,20 +17,20 @@ setInterval( () => {
 //buy ads
 //pre investment banking
 setInterval( () =>{
-    if (funds * 2 > adCost && wire > clipRate * 30) {
+    if (funds * 2 > adCost && wire > clipRate * 30 && wire > 0) {
         buyAds();
         console.log(`ads`);
     }
     else{
         const clipperLVL = Number(clipmakerLevel2Element.textContent.replace(`"`,``))
         if (clipperLVL < 76){
-            if (funds > clipperCost && wire > clipRate * 30){
+            if (funds > clipperCost && wire > clipRate * 30 && wire > 0){
                 makeClipper();
                 console.log(`clipper`);
             }   
         }
         else{
-            if (funds > megaClipperCost && wire > clipRate * 30){
+            if (funds > megaClipperCost && wire > clipRate * 30 && wire > 0){
                 makeMegaClipper();
                 console.log(`mega clipper`);
             } 
